@@ -1,1 +1,119 @@
-s
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #fdfdfd;
+    color: #333;
+}
+
+/* Navbar */
+nav#navbar {
+    position: fixed;
+    width: 100%;
+    background: #007acc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+nav#navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav#navbar li {
+    margin-left: 1.5rem;
+}
+
+nav#navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav#navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg,#007acc,#00b4ff);
+    color: white;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 2rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background: white;
+    color: #007acc;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e6f2ff;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+}
+
+section h2 {
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Project Cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #eef6fb;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #222;
+    color: white;
+    margin-top: 3rem;
+}
